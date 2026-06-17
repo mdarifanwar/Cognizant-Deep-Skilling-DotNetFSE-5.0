@@ -107,10 +107,6 @@ The objective of this repository is to maintain a structured record of all learn
 
 ---
 
-## Author
-
-**Md Arif Ansari**
-
 GitHub: https://github.com/mdarifanwar
 
 ---
