@@ -49,8 +49,6 @@ Cognizant-Deep-Skilling-DotNetFSE-5.0
 | 6 | ASP.NET Core Web API | Pending |
 | 7 | Microservices | Pending |
 | 8 | React | Pending |
-| 9 | Git, Docker & CI/CD | Pending |
-| 10 | Generative AI | Pending |
 
 ---
 
