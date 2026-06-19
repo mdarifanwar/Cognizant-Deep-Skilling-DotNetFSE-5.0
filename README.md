@@ -37,7 +37,7 @@ Cognizant-Deep-Skilling-DotNetFSE-5.0
 
 ## Learning Modules
 
-| Module | Topic | Status |
+| Week | Module | Status |
 |----------|----------|----------|
 | 1 | Design Patterns | In Progress |
 | 2 | Data Structures & Algorithms | Pending |
