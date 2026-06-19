@@ -29,8 +29,6 @@ Cognizant-Deep-Skilling-DotNetFSE-5.0
 ├── Module-06-ASPNET-Core-WebAPI
 ├── Module-07-Microservices
 ├── Module-08-React
-├── Module-09-Git-Docker-CICD
-├── Module-10-Generative-AI
 │
 └── README.md
 ```
