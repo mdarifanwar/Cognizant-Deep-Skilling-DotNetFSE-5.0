@@ -2,6 +2,9 @@
 
 ## Candidate Information
 
+| Field | Details |
+|---------|---------|
+| Name | Md Arif Ansari |
 | Program | Cognizant Digital Nurture 5.0 |
 | Track | DotNet Full Stack Engineer (React) |
 | Duration | 7 Weeks Deep Skilling Program |
@@ -12,7 +15,7 @@
 
 This repository contains all mandatory exercises, practice assessments, hands-on implementations, and project work completed as part of the Cognizant Digital Nurture 5.0 Deep Skilling Program.
 
-The repository is organized module-wise and includes source code, solutions, screenshots, and supporting documents required during the learning journey.
+The repository is organized week-wise and includes structured folders for each technology module covered during the learning journey.
 
 ---
 
@@ -20,33 +23,37 @@ The repository is organized module-wise and includes source code, solutions, scr
 
 ```text
 Cognizant-Deep-Skilling-DotNetFSE-5.0
+
+├── Week-1-Engineering-Concepts-And-AdvancedSQL
 │
-├── Module-01-Design-Patterns
-├── Module-02-Data-Structures-And-Algorithms
-├── Module-03-Advanced-SQL
-├── Module-04-NUnit-Moq
-├── Module-05-Entity-Framework-Core
-├── Module-06-ASPNET-Core-WebAPI
-├── Module-07-Microservices
-├── Module-08-React
+├── Week-2-EntityFrameworkCore
+│
+├── Week-3-ASPNETCoreWebAPI
+│
+├── Week-4-Microservices
+│
+├── Week-5-ReactJS
+│
+├── Week-6-AdvancedReact
+│
+├── Week-7-DevOps-Docker-GenAI
 │
 └── README.md
 ```
 
 ---
 
-## Learning Modules
+## Learning Journey
 
 | Week | Module | Status |
-|----------|----------|----------|
-| 1 | Design Patterns | In Progress |
-| 2 | Data Structures & Algorithms | Pending |
-| 3 | Advanced SQL | Pending |
-| 4 | NUnit & Moq | Pending |
-| 5 | Entity Framework Core | Pending |
-| 6 | ASP.NET Core Web API | Pending |
-| 7 | Microservices | Pending |
-| 8 | React | Pending |
+|--------|--------|--------|
+| Week 1 | Engineering Concepts & Advanced SQL | gitCompleted |
+| Week 2 | Entity Framework Core | In Pending |
+| Week 3 | ASP.NET Core Web API | In Pending |
+| Week 4 | Microservices | In Pending |
+| Week 5 | React JS | In Pending |
+| Week 6 | Advanced React | In Pending |
+| Week 7 | DevOps, Docker & GenAI | In Pending |
 
 ---
 
@@ -65,7 +72,7 @@ Cognizant-Deep-Skilling-DotNetFSE-5.0
 - Microservices
 
 ### Frontend Technologies
-- React
+- React JS
 - HTML5
 - CSS3
 - Bootstrap
@@ -73,27 +80,80 @@ Cognizant-Deep-Skilling-DotNetFSE-5.0
 ### Database
 - SQL Server
 
-### Testing
-- NUnit
-- Moq
-
 ### DevOps & Tools
 - Git
 - GitHub
 - Docker
 - CI/CD
+- Postman
+
+### AI & Cloud Fundamentals
+- GenAI Basics
+- Prompt Engineering
+- Cloud Fundamentals
+
+---
+
+## Week-wise Modules
+
+### Week 1
+- Design Patterns
+- Data Structures & Algorithms
+- Advanced SQL
+
+### Week 2
+- DbContext Setup
+- CRUD Operations
+- LINQ Queries
+- Migrations
+- Entity Relationships
+
+### Week 3
+- REST APIs
+- JWT Authentication
+- Swagger Integration
+- Exception Handling
+- Middleware Filters
+
+### Week 4
+- Service Communication
+- API Gateway
+- Service Discovery
+- Distributed Architecture
+
+### Week 5
+- React Components
+- Props & State
+- React Forms
+- Routing
+- API Integration
+- Hooks
+
+### Week 6
+- State Management
+- Performance Optimization
+- Testing
+- Advanced React Concepts
+
+### Week 7
+- Git Version Control
+- Docker Containerization
+- CI/CD Pipelines
+- DevOps Fundamentals
+- Cloud Fundamentals
+- GenAI Fundamentals
 
 ---
 
 ## Folder Guidelines
 
-Each module folder contains:
+Each exercise folder may contain:
 
-- Mandatory Exercises
-- Practice Assessments
 - Source Code
 - Screenshots
-- Supporting Documents (if applicable)
+- README Documentation
+- Assignment Files
+- Supporting Documents
 
 ---
 
@@ -102,6 +162,8 @@ Each module folder contains:
 The objective of this repository is to maintain a structured record of all learning activities, assessments, and hands-on exercises completed during the Cognizant Digital Nurture 5.0 Deep Skilling Program.
 
 ---
+
+### GitHub Profile
 
 GitHub: https://github.com/mdarifanwar
 
