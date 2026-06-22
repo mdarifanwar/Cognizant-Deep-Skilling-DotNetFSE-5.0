@@ -47,7 +47,7 @@ Cognizant-Deep-Skilling-DotNetFSE-5.0
 
 | Week | Module | Status |
 |--------|--------|--------|
-| Week 1 | Engineering Concepts & Advanced SQL | gitCompleted |
+| Week 1 | Engineering Concepts & Advanced SQL | Completed |
 | Week 2 | Entity Framework Core | In Pending |
 | Week 3 | ASP.NET Core Web API | In Pending |
 | Week 4 | Microservices | In Pending |
