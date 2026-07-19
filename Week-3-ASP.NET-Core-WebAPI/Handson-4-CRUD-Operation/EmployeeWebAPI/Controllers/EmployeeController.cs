@@ -1,24 +1,15 @@
-using EmployeeWebAPI.Filters;
 using EmployeeWebAPI.Models;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeWebAPI.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-[CustomAuthFilter]
 public class EmployeeController : ControllerBase
 {
-    private readonly List<Employee> employees;
+    private static List<Employee> employees = GetStandardEmployeeList();
 
-    public EmployeeController()
-    {
-        employees = GetStandardEmployeeList();
-    }
-
-    // Returns the default employee list
-    private List<Employee> GetStandardEmployeeList()
+    private static List<Employee> GetStandardEmployeeList()
     {
         return new List<Employee>
         {
@@ -38,7 +29,7 @@ public class EmployeeController : ControllerBase
                     new Skill { Id = 1, Name = "C#" },
                     new Skill { Id = 2, Name = "ASP.NET Core" }
                 },
-                DateOfBirth = new DateTime(2002, 5, 10)
+                DateOfBirth = new DateTime(2002,5,10)
             },
 
             new Employee
@@ -57,38 +48,31 @@ public class EmployeeController : ControllerBase
                     new Skill { Id = 3, Name = "Communication" },
                     new Skill { Id = 4, Name = "Recruitment" }
                 },
-                DateOfBirth = new DateTime(2001, 10, 15)
+                DateOfBirth = new DateTime(2001,10,15)
             }
         };
     }
 
     // GET: api/employee
-    [AllowAnonymous]
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-    public ActionResult<List<Employee>> Get()
-    {
-        return Ok(employees);
-        //}
-
-        // GET: api/employee
-        [AllowAnonymous]
-    [HttpGet]
-    [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
     public ActionResult<List<Employee>> Get()
     {
         return Ok(employees);
     }
 
-    // GET: api/employee/standard
-    [AllowAnonymous]
-    [HttpGet("standard")]
+    // GET: api/employee/1
+    [HttpGet("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
-    public ActionResult<Employee> GetStandard()
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public ActionResult<Employee> Get(int id)
     {
-        return Ok(employees.First());
+        var employee = employees.FirstOrDefault(e => e.Id == id);
+
+        if (employee == null)
+            return NotFound();
+
+        return Ok(employee);
     }
 
     // POST: api/employee
@@ -98,19 +82,26 @@ public class EmployeeController : ControllerBase
     {
         employees.Add(employee);
 
-        return CreatedAtAction(nameof(GetStandard), new { id = employee.Id }, employee);
+        return CreatedAtAction(nameof(Get), new { id = employee.Id }, employee);
     }
 
     // PUT: api/employee/1
     [HttpPut("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public IActionResult Put(int id, [FromBody] Employee updatedEmployee)
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public ActionResult<Employee> Put(int id, [FromBody] Employee updatedEmployee)
     {
+        if (id <= 0)
+        {
+            return BadRequest("Invalid employee id");
+        }
+
         var employee = employees.FirstOrDefault(e => e.Id == id);
 
         if (employee == null)
-            return NotFound();
+        {
+            return BadRequest("Invalid employee id");
+        }
 
         employee.Name = updatedEmployee.Name;
         employee.Salary = updatedEmployee.Salary;
@@ -118,6 +109,29 @@ public class EmployeeController : ControllerBase
         employee.Department = updatedEmployee.Department;
         employee.Skills = updatedEmployee.Skills;
         employee.DateOfBirth = updatedEmployee.DateOfBirth;
+
+        return Ok(employee);
+    }
+
+    // DELETE: api/employee/1
+    [HttpDelete("{id}")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public IActionResult Delete(int id)
+    {
+        if (id <= 0)
+        {
+            return BadRequest("Invalid employee id");
+        }
+
+        var employee = employees.FirstOrDefault(e => e.Id == id);
+
+        if (employee == null)
+        {
+            return BadRequest("Invalid employee id");
+        }
+
+        employees.Remove(employee);
 
         return Ok(employee);
     }

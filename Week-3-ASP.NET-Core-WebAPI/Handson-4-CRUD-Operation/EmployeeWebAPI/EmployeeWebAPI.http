@@ -1,0 +1,69 @@
+@EmployeeWebAPI_HostAddress = http://localhost:5000
+
+### Get All Employees
+GET {{EmployeeWebAPI_HostAddress}}/api/Employee
+Accept: application/json
+
+###
+
+### Get Employee By Id
+GET {{EmployeeWebAPI_HostAddress}}/api/Employee/1
+Accept: application/json
+
+###
+
+### Create Employee
+POST {{EmployeeWebAPI_HostAddress}}/api/Employee
+Content-Type: application/json
+
+{
+  "id": 3,
+  "name": "Rohit",
+  "salary": 55000,
+  "permanent": true,
+  "department": {
+    "id": 3,
+    "name": "Finance"
+  },
+  "skills": [
+    {
+      "id": 5,
+      "name": "Accounting"
+    }
+  ],
+  "dateOfBirth": "2000-08-20T00:00:00"
+}
+
+###
+
+### Update Employee
+PUT {{EmployeeWebAPI_HostAddress}}/api/Employee/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Arif Updated",
+  "salary": 70000,
+  "permanent": true,
+  "department": {
+    "id": 1,
+    "name": "IT"
+  },
+  "skills": [
+    {
+      "id": 1,
+      "name": "ASP.NET Core"
+    },
+    {
+      "id": 2,
+      "name": "C#"
+    }
+  ],
+  "dateOfBirth": "2002-05-10T00:00:00"
+}
+
+###
+
+### Delete Employee
+DELETE {{EmployeeWebAPI_HostAddress}}/api/Employee/1
+Accept: application/json
