@@ -1,0 +1,9 @@
+@FirstWebAPI_HostAddress = https://localhost:7020
+
+GET {{FirstWebAPI_HostAddress}}/api/values
+Accept: application/json
+
+###
+
+GET {{FirstWebAPI_HostAddress}}/api/values/1
+Accept: application/json
