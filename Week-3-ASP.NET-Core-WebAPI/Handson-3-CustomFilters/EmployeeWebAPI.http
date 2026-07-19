@@ -1,0 +1,61 @@
+@EmployeeWebAPI_HostAddress = http://localhost:5040
+
+### Get Employees
+GET {{EmployeeWebAPI_HostAddress}}/api/employee
+Accept: application/json
+
+###
+
+### Get Standard Employee
+GET {{EmployeeWebAPI_HostAddress}}/api/employee/standard
+Accept: application/json
+
+###
+
+### Create Employee
+POST {{EmployeeWebAPI_HostAddress}}/api/employee
+Content-Type: application/json
+Authorization: Bearer abc123
+
+{
+  "id": 3,
+  "name": "John",
+  "salary": 60000,
+  "permanent": true,
+  "department": {
+    "id": 1,
+    "name": "IT"
+  },
+  "skills": [
+    {
+      "id": 1,
+      "name": "C#"
+    }
+  ],
+  "dateOfBirth": "2000-05-20"
+}
+
+###
+
+### Update Employee
+PUT {{EmployeeWebAPI_HostAddress}}/api/employee/1
+Content-Type: application/json
+Authorization: Bearer abc123
+
+{
+  "id": 1,
+  "name": "Arif Updated",
+  "salary": 75000,
+  "permanent": true,
+  "department": {
+    "id": 1,
+    "name": "IT"
+  },
+  "skills": [
+    {
+      "id": 1,
+      "name": "ASP.NET Core"
+    }
+  ],
+  "dateOfBirth": "2002-05-10"
+}
