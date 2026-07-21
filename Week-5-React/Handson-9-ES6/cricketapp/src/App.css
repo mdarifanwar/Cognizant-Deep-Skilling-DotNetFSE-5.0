@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+    color: black;
+}
+
+h1 {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    color: black;
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+span {
+    color: black;
+    font-weight: normal;
+}
+
+hr {
+    margin: 20px 0;
+}
