@@ -1,0 +1,40 @@
+.container {
+    width: 700px;
+    margin-left: 60px;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 250px;
+    height: 180px;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.office-card {
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+hr {
+    margin: 15px 0;
+}
