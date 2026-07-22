@@ -1,0 +1,46 @@
+# Operating System
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Visual Studio Code
+.vscode/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Logs
+*.log
+logs/
+
+# Temporary Files
+*.tmp
+*.temp
+
+# Node.js
+node_modules/
+
+# Docker
+*.tar
+
+# Environment Files
+.env
+
+# Build Output
+bin/
+obj/
+dist/
+build/
+
+# IDE Files
+.idea/
+
+# Backup Files
+*.bak
+*.old
+
+# Python
+__pycache__/
+*.pyc
