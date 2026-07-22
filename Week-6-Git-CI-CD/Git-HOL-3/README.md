@@ -1,310 +1,186 @@
-\# Git-HOL-2 – Using .gitignore
+# Git-HOL-3 - Branching and Merging
 
+## Overview
 
+This hands-on demonstrates the fundamental Git branching and merging workflow. It covers creating a new branch, switching between branches, making changes in a branch, committing those changes, comparing branches, merging the branch into the main branch, viewing commit history, deleting the merged branch, and verifying the repository status.
 
-\## Overview
+---
 
+## Objectives
 
+- Understand Git branching concepts.
+- Create and switch to a new branch.
+- Commit changes in a feature branch.
+- Compare differences between branches.
+- Merge a feature branch into the main branch.
+- View Git commit history.
+- Delete merged branches.
+- Verify repository status after merge.
 
-This hands-on exercise demonstrates how to use the `.gitignore` file in Git to ignore unwanted files and directories from version control. Git automatically excludes files and folders specified in `.gitignore` while tracking the remaining project files.
+---
 
+## Prerequisites
 
+- Git installed on Windows.
+- Git Bash configured.
+- GitHub repository created.
+- Basic knowledge of Git commands.
 
-\---
+---
 
+## Folder Structure
 
-
-\## Objectives
-
-
-
-\- Understand the purpose of `.gitignore`.
-
-\- Ignore unwanted files using Git.
-
-\- Ignore directories from version control.
-
-\- Verify ignored files using Git status.
-
-
-
-\---
-
-
-
-\## Prerequisites
-
-
-
-\- Git installed
-
-\- Git Bash
-
-\- GitHub Account
-
-\- Existing Git Repository
-
-
-
-\---
-
-
-
-\## Project Structure
-
-
-
-```text
-
-Git-HOL-2/
-
+```
+Git-HOL-3/
 │
-
 ├── Commands/
-
-│   ├── GitStatusBeforeIgnore.png
-
-│   ├── GitIgnoreFile.png
-
-│   ├── GitStatusAfterIgnore.png
-
-│   ├── GitCommit.png
-
-│   └── GitHubPush.png
-
+│   ├── GitBranch.png
+│   ├── CreateBranch.png
+│   ├── ListBranches.png
+│   ├── GitStatusOnBranch.png
+│   ├── GitCommitOnBranch.png
+│   ├── GitDiff.png
+│   ├── CheckoutMain.png
+│   ├── GitMerge.png
+│   ├── GitLog.png
+│   ├── DeleteBranch.png
+│   ├── FinalStatus.png
+│   └── GitPush.png
 │
-
-├── .gitignore
-
-├── error.log
-
-├── log/
-
-│   └── application.log
-
-│
-
+├── BranchFile.txt
 └── README.md
-
 ```
 
+---
 
+## Commands Executed
 
-\---
-
-
-
-\## Steps Performed
-
-
-
-\### Step 1
-
-
-
-Created a Git repository.
-
-
+### Initialize Git Repository
 
 ```bash
-
 git init
-
 ```
 
-
-
-\---
-
-
-
-\### Step 2
-
-
-
-Created a log file.
-
-
+### List Existing Branches
 
 ```bash
-
-echo "Application Error" >> error.log
-
+git branch
 ```
 
-
-
-\---
-
-
-
-\### Step 3
-
-
-
-Created a log directory.
-
-
+### Create and Switch to New Branch
 
 ```bash
-
-mkdir log
-
+git checkout -b GitNewBranch
 ```
 
-
-
-Created a log file.
-
-
+### Display All Branches
 
 ```bash
-
-echo "Log File" >> log/application.log
-
+git branch -a
 ```
 
-
-
-\---
-
-
-
-\### Step 4
-
-
-
-Checked repository status.
-
-
+### Check Repository Status
 
 ```bash
-
 git status
-
 ```
 
-
-
-Git displayed both the log file and log folder as untracked.
-
-
-
-\---
-
-
-
-\### Step 5
-
-
-
-Created a `.gitignore` file.
-
-
-
-Contents:
-
-
-
-```gitignore
-
-\*.log
-
-log/
-
-```
-
-
-
-\---
-
-
-
-\### Step 6
-
-
-
-Checked Git status again.
-
-
-
-The `.log` file and `log` folder were ignored by Git.
-
-
-
-\---
-
-
-
-\### Step 7
-
-
-
-Committed the project.
-
-
+### Stage Files
 
 ```bash
-
 git add .
-
-git commit -m "Completed Git-HOL-2"
-
 ```
 
-
-
-\---
-
-
-
-\### Step 8
-
-
-
-Pushed the project to GitHub.
-
-
+### Commit Changes
 
 ```bash
-
-git push origin main
-
+git commit -m "Added BranchFile in GitNewBranch"
 ```
 
+### Compare Branches
 
+```bash
+git diff main GitNewBranch
+```
 
-\---
+### Switch Back to Main Branch
 
+```bash
+git checkout main
+```
 
+### Merge Branch
 
-\## Files Ignored
+```bash
+git merge GitNewBranch
+```
 
+### View Commit History
 
+```bash
+git log --oneline --graph --decorate
+```
 
-\- All `.log` files
+### Delete Merged Branch
 
-\- `log` directory
+```bash
+git branch -d GitNewBranch
+```
 
+### Verify Final Status
 
+```bash
+git status
+```
 
-\---
+### Push Changes to GitHub
 
+```bash
+git push origin main
+```
 
+---
 
-\## Learning Outcome
+## Screenshots
 
+The **Commands** folder contains screenshots for every major step performed during this hands-on.
 
+| Screenshot | Description |
+|------------|-------------|
+| GitBranch.png | Display current branch |
+| CreateBranch.png | Create GitNewBranch |
+| ListBranches.png | View local and remote branches |
+| GitStatusOnBranch.png | Repository status on feature branch |
+| GitCommitOnBranch.png | Commit changes in GitNewBranch |
+| GitDiff.png | Compare main and feature branch |
+| CheckoutMain.png | Switch back to main branch |
+| GitMerge.png | Merge GitNewBranch into main |
+| GitLog.png | Display Git commit history |
+| DeleteBranch.png | Delete merged feature branch |
+| FinalStatus.png | Verify repository status |
+| GitPush.png | Push merged changes to GitHub |
 
-After completing this hands-on, I learned:
+---
 
+## Outcome
 
+Successfully completed the Git branching and merging workflow by:
 
-\- How `.gitignore` works.
+- Creating a new feature branch.
+- Making and committing changes.
+- Comparing branch differences.
+- Switching back to the main branch.
+- Merging the feature branch.
+- Viewing commit history.
+- Deleting the merged branch.
+- Verifying the repository status.
+- Pushing the final changes to GitHub.
 
-\- How to ignore files and folders in Git.
+---
 
-\- How Git excludes ignored files from version control.
+## Technologies Used
 
-\- How to verify ignored files using `git status`.
-
+- Git
+- Git Bash
+- GitHub
+- Visual Studio Code
