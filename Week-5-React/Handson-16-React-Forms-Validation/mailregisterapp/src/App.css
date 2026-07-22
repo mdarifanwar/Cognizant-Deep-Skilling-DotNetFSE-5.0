@@ -1,0 +1,30 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: red;
+    margin-bottom: 25px;
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    padding: 6px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 180px;
+    height: 24px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    cursor: pointer;
+}
