@@ -1,484 +1,254 @@
-\# Cognizant Digital Nurture 5.0 – Deep Skilling Program
+# Cognizant Digital Nurture 5.0 – Deep Skilling Program
 
+A comprehensive collection of hands-on exercises, assignments, projects, and practical implementations completed during the **Cognizant Digital Nurture 5.0 – DotNet Full Stack Engineer (React)** learning program.
 
+---
 
-\## Candidate Information
-
-
+## 👨‍💻 Candidate Information
 
 | Field | Details |
-
 |-------|---------|
+| **Name** | Md Arif Ansari |
+| **Program** | Cognizant Digital Nurture 5.0 |
+| **Track** | DotNet Full Stack Engineer (React) |
+| **Duration** | 7 Weeks |
+| **Repository** | Cognizant-Deep-Skilling-DotNetFSE-5.0 |
 
-| \*\*Name\*\* | Md Arif Ansari |
+---
 
-| \*\*Program\*\* | Cognizant Digital Nurture 5.0 |
+# 📖 About This Repository
 
-| \*\*Track\*\* | DotNet Full Stack Engineer (React) |
+This repository contains all mandatory hands-on exercises, coding assignments, SQL implementations, Git practices, ASP.NET Core applications, React applications, Microservices exercises, and DevOps fundamentals completed throughout the Cognizant Deep Skilling Program.
 
-| \*\*Duration\*\* | 7-Week Deep Skilling Program |
+Each week's work is organized into dedicated folders containing:
 
+- Source Code
+- Hands-on Exercises
+- SQL Scripts
+- Screenshots
+- README Documentation
+- Supporting Files
 
+The repository serves as a structured portfolio demonstrating practical knowledge of modern Full Stack .NET development.
 
-\---
+---
 
-
-
-\# About This Repository
-
-
-
-This repository contains all mandatory hands-on exercises, assignments, coding implementations, SQL scripts, Git exercises, React applications, and project work completed during the \*\*Cognizant Digital Nurture 5.0 – Deep Skilling Program\*\*.
-
-
-
-The repository is organized week-wise, making it easy to navigate through each learning module and practical implementation.
-
-
-
-\---
-
-
-
-\# Repository Structure
-
-
+# 📂 Repository Structure
 
 ```text
-
 Cognizant-Deep-Skilling-DotNetFSE-5.0
-
 │
-
 ├── Week-1-Engineering-Concepts-And-AdvancedSQL
-
 │
-
 ├── Week-2-EntityFramework-WebAPI
-
 │
-
 ├── Week-3-ASP.NET-Core-WebAPI
-
 │
-
 ├── Week-4-Microservices
-
 │
-
 ├── Week-5-React
-
 │
-
 ├── Week-6-Git-CI-CD
-
 │
-
 ├── Week-7-DevOps-Docker-GenAI
-
 │
-
 └── README.md
-
 ```
 
+---
 
-
-\---
-
-
-
-\# Learning Progress
-
-
+# 📊 Learning Progress
 
 | Week | Module | Status |
-
 |------|--------|--------|
+| Week 1 | Engineering Concepts & Advanced SQL | Completed |
+| Week 2 | Entity Framework Core & Web API | Completed |
+| Week 3 | ASP.NET Core Web API | Completed |
+| Week 4 | Microservices | Completed |
+| Week 5 | React | Completed |
+| Week 6 | Git & CI/CD | Completed |
+| Week 7 | DevOps, Docker & GenAI Fundamentals | Completed |
+
+---
+
+# 💻 Technology Stack
 
-| Week 1 | Engineering Concepts \& Advanced SQL | ✅ Completed |
+| Category | Technologies |
+|----------|--------------|
+| **Programming Languages** | C#, SQL, JavaScript, HTML5, CSS3 |
+| **Backend** | .NET, ASP.NET Core Web API, Entity Framework Core |
+| **Frontend** | React JS, React Hooks, React Router, Bootstrap |
+| **Database** | Microsoft SQL Server |
+| **Architecture** | REST APIs, Microservices |
+| **Version Control** | Git, GitHub |
+| **DevOps** | Git, Docker, CI/CD Fundamentals |
+| **Tools** | Visual Studio, VS Code, SSMS, Postman, Git Bash, GitHub |
 
-| Week 2 | Entity Framework Core \& Web API | ✅ Completed |
+---
 
-| Week 3 | ASP.NET Core Web API | ✅ Completed |
+# 📚 Week-wise Learning Modules
 
-| Week 4 | Microservices | ✅ Completed |
+## Week 1 – Engineering Concepts & Advanced SQL
 
-| Week 5 | React | ✅ Completed |
+- Design Patterns
+- SOLID Principles
+- Data Structures & Algorithms
+- Advanced SQL
+- Stored Procedures
+- User Defined Functions
+- Triggers
+- Views
 
-| Week 6 | Git \& CI/CD | ✅ Completed |
+---
 
-| Week 7 | DevOps, Docker \& GenAI | ✅ Completed |
+## Week 2 – Entity Framework Core
 
+- DbContext Configuration
+- CRUD Operations
+- LINQ Queries
+- Entity Relationships
+- Migrations
+- Repository Pattern
 
+---
 
-\---
+## Week 3 – ASP.NET Core Web API
 
+- RESTful APIs
+- Controllers
+- Dependency Injection
+- Middleware
+- Exception Handling
+- Swagger Documentation
 
+---
 
-\# Technologies Covered
+## Week 4 – Microservices
 
+- Microservices Architecture
+- API Gateway
+- Service Communication
+- Service Discovery
+- Distributed Systems
 
+---
 
-\## Programming Languages
+## Week 5 – React
 
+- Components
+- Props
+- State Management
+- Conditional Rendering
+- Lists & Keys
+- Forms
+- Hooks
+- Context API
 
+---
 
-\- C#
+## Week 6 – Git & CI/CD
 
-\- SQL
+- Git Basics
+- Repository Management
+- Git Ignore
+- Branching
+- Merging
+- Merge Conflict Resolution
+- Push & Pull Operations
+- GitHub Workflow
 
-\- JavaScript
+---
 
-\- HTML
+## Week 7 – DevOps, Docker & GenAI
 
-\- CSS
+- DevOps Fundamentals
+- Docker Basics
+- Containerization
+- CI/CD Concepts
+- Cloud Fundamentals
+- Generative AI Fundamentals
 
+---
 
+# 📁 Repository Organization
 
-\## Backend Technologies
+Each exercise folder typically contains:
 
+- 📄 Source Code
+- 📸 Screenshots
+- 📝 README Documentation
+- 📑 Assignment Files
+- ⚙️ Configuration Files
+- 💻 Command Outputs
 
+---
 
-\- .NET
-
-\- ASP.NET Core Web API
-
-\- Entity Framework Core
-
-\- REST APIs
-
-\- Microservices
-
-
-
-\## Frontend Technologies
-
-
-
-\- React JS
-
-\- React Hooks
-
-\- React Forms
-
-\- Routing
-
-\- Bootstrap
-
-
-
-\## Database
-
-
-
-\- SQL Server
-
-
-
-\## DevOps \& Version Control
-
-
-
-\- Git
-
-\- GitHub
-
-\- CI/CD Concepts
-
-\- Docker (Fundamentals)
-
-
-
-\## Tools
-
-
-
-\- Visual Studio
-
-\- Visual Studio Code
-
-\- SQL Server Management Studio (SSMS)
-
-\- Postman
-
-\- Git Bash
-
-
-
-\---
-
-
-
-\# Week-wise Learning Modules
-
-
-
-\## Week 1
-
-\- Engineering Concepts
-
-\- Design Patterns
-
-\- Data Structures \& Algorithms
-
-\- Advanced SQL
-
-\- Stored Procedures
-
-\- Functions
-
-\- Triggers
-
-\- Views
-
-
-
-\---
-
-
-
-\## Week 2
-
-\- Entity Framework Core
-
-\- DbContext
-
-\- CRUD Operations
-
-\- LINQ
-
-\- Entity Relationships
-
-\- Migrations
-
-
-
-\---
-
-
-
-\## Week 3
-
-\- ASP.NET Core Web API
-
-\- REST APIs
-
-\- Controllers
-
-\- Dependency Injection
-
-\- Middleware
-
-\- Exception Handling
-
-\- Swagger
-
-
-
-\---
-
-
-
-\## Week 4
-
-\- Microservices
-
-\- Service Communication
-
-\- API Gateway
-
-\- Distributed Architecture
-
-\- Service Discovery
-
-
-
-\---
-
-
-
-\## Week 5
-
-\- React Fundamentals
-
-\- Components
-
-\- Props
-
-\- State
-
-\- Conditional Rendering
-
-\- Lists \& Keys
-
-\- Forms
-
-\- Hooks
-
-\- Context API
-
-
-
-\---
-
-
-
-\## Week 6
-
-\- Git Basics
-
-\- Git Repository
-
-\- Git Ignore
-
-\- Branching
-
-\- Merge
-
-\- Merge Conflict Resolution
-
-\- Git Push \& Pull
-
-\- GitHub Integration
-
-
-
-\---
-
-
-
-\## Week 7
-
-\- DevOps Fundamentals
-
-\- Docker Fundamentals
-
-\- CI/CD Concepts
-
-\- Cloud Fundamentals
-
-\- Generative AI Fundamentals
-
-
-
-\---
-
-
-
-\# Repository Organization
-
-
-
-Each hands-on folder may contain:
-
-
-
-\- Source Code
-
-\- SQL Scripts
-
-\- React Applications
-
-\- Screenshots
-
-\- Assignment Documents
-
-\- Command Outputs
-
-\- README Documentation
-
-
-
-\---
-
-
-
-\# Learning Outcomes
-
-
+# 🎯 Learning Outcomes
 
 Through this Deep Skilling Program, I gained practical experience in:
 
+- Object-Oriented Programming
+- Design Patterns & SOLID Principles
+- Advanced SQL Programming
+- Entity Framework Core
+- ASP.NET Core Web API Development
+- Microservices Architecture
+- React Development
+- Git & GitHub Version Control
+- CI/CD Concepts
+- Docker Fundamentals
+- DevOps Practices
+- Cloud & Generative AI Fundamentals
 
+---
 
-\- Object-Oriented Programming
+# 🚀 How to Explore
 
-\- SQL \& Database Management
+1. Open the required **Week** folder.
+2. Navigate to the corresponding **Hands-on** folder.
+3. Read the **README.md** for implementation details.
+4. View the **Screenshots** folder for execution results.
+5. Review the source code and supporting files.
 
-\- Entity Framework Core
+---
 
-\- ASP.NET Core Web API Development
+# 📌 Repository Highlights
 
-\- Microservices Architecture
+- ✅ Week-wise organized structure
+- ✅ Professional documentation
+- ✅ SQL Scripts
+- ✅ ASP.NET Core Projects
+- ✅ React Applications
+- ✅ Git & GitHub Exercises
+- ✅ Docker & DevOps Fundamentals
+- ✅ Execution Screenshots
+- ✅ Hands-on Assignments
 
-\- React Development
+---
 
-\- Git \& GitHub Workflow
+# 🌐 GitHub Profile
 
-\- Version Control Best Practices
+**GitHub:**  
+**https://github.com/mdarifanwar**
 
-\- CI/CD Concepts
+---
 
-\- DevOps Fundamentals
+# 📈 Current Status
 
-\- Docker Basics
+| Module | Status |
+|---------|--------|
+| Week 1 | Completed |
+| Week 2 | Completed |
+| Week 3 | Cmpleted |
+| Week 4 | Completed |
+| Week 5 | Completed |
+| Week 6 | Completed |
+| Week 7 | Completed |
 
-\- Cloud \& GenAI Fundamentals
+---
 
+## 📄 License
 
+This repository is maintained for educational purposes as part of the **Cognizant Digital Nurture 5.0 – DotNet Full Stack Engineer (React)** program.
 
-\---
-
-
-
-\# GitHub Profile
-
-
-
-\*\*GitHub:\*\* https://github.com/mdarifanwar
-
-
-
-\---
-
-
-
-\# Repository Status
-
-
-
-\*\*Program:\*\* Cognizant Digital Nurture 5.0
-
-
-
-\*\*Track:\*\* DotNet Full Stack Engineer (React)
-
-
-
-\*\*Current Progress:\*\*
-
-
-
-\- ✅ Week 1 Completed
-
-\- ✅ Week 2 Completed
-
-\- ✅ Week 3 Completed
-
-\- ✅ Week 4 Completed
-
-\- ✅ Week 5 Completed
-
-\- ✅ Week 6 Completed
-
-\- ✅ Week 7 Completed
-
-
-
-\---
-
-
-
-> This repository is maintained as part of the \*\*Cognizant Digital Nurture 5.0 – Deep Skilling Program\*\*, showcasing hands-on implementations, practical assignments, and learning progress throughout the program.
-
+All hands-on implementations, exercises, and documentation are organized to showcase practical learning and development throughout the program.
